@@ -9,5 +9,5 @@ def hello():
 if __name__ == '__main__':
     # It's crucial for Flask to listen on 0.0.0.0 for it to be accessible
     # outside the container (e.g., from the EC2 host).
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5001)
 
