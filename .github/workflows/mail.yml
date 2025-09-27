@@ -51,10 +51,10 @@ jobs:
           docker stop flask-container || true
           docker rm flask-container || true
           
-          # 4. Run the new container, mapping EC2's port 80 to container's port 5000
+          # 4. Run the new container, mapping EC2's port 80 to container's port 5001
           # We're using port 80 on EC2 for standard HTTP access.
           docker run -d \
-          -p 80:5000 \
+          -p 80:5001 \
           --name flask-container \
           --restart always \
           ${{ env.IMAGE_TAG }}
